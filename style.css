@@ -46,7 +46,7 @@
         background-color: #555;
         grid-area: ft;
     }
-@media(min-width: 900px){
+@media(min-width: 1000px){
     .container{
         display: grid;
         grid-template-columns: auto repeat(3, 1fr);
