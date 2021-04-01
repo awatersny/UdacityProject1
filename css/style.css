@@ -1,28 +1,32 @@
     body{
         position: relative;
         margin: 0px;
-        background-image: url("Images/Fergus.jpg");
+        background-image: url("../images/Fergus.jpg");
         background-size: 100%;
     }
+
     h1{
         padding: 5px 0px 10px 30px;
         font-size: 50px;
     }
+
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100px 200px 100% 150px;
+        grid-template-rows: 100px 150px 100% 60px;
         grid-template-areas: 
         "hd hd hd"
         "sd sd sd"
         "main main main"
         "ft ft ft";
-        grid-gap: 40px;
+        gap: 40px;
     }
+
     .box{
         border-radius: 10px;
-        box-shadow: -5px 10px 15px gray;
+        box-shadow: -5px 10px 15px #000000;
     }
+
     .header{
         position: fixed;
         width: 100vw;
@@ -32,80 +36,99 @@
         border-radius: 0px;
         grid-area: hd;
     }
+
     .sidebar{
         padding: 20px;
         text-align: center;
         grid-area: sd;
         background-color: #ffffff;
     }
+
     .navbar{
         color: #00a2ff;
         padding: 0px;
         list-style: none;
     }
+
     ul{
         padding: 0px;
     }
+
     li{
         text-decoration: underline;
         text-align: left;
         margin: 0px 3vw 0px 3vw;
     }
+
     .content{
         margin: 0px 50px 50px 50px;
         grid-area: main;
         display: grid;
+        grid-template-columns: 100;
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 40px;
+        gap: 40px;
     }
+
     .child-content{
-        margin-bottom: 6%;
+        /* margin-bottom: 6%; */
         text-align: center;
         background-color: #dddddd;
     }
+
     .dog-img{
         height: 40%;
         width: 90%;
     }
+
     .footer{
-        padding: 20px 0px 0px 0px;
+        padding: 0px 0px 0px 20px;
         color: white;
         background-color: #000055;
         grid-area: ft;
     }
+
     .footer-bar{
         display: inline;
-        padding: 0px 1vw 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
+
 @media(max-width: 999px){
+
     li{
         display: inline;
     }
+
 }
+
 @media(min-width: 1000px){
+
     .container{
         display: grid;
         grid-template-columns: auto repeat(3, 20%);
-        grid-template-rows: 120px 700px 80px;
+        grid-template-rows: 120px 700px 60px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "sd sd main main main main main main"
         "ft ft ft ft ft ft ft ft";
-        grid-gap: 0px;
+        gap: 0px;
     }
+
     .sidebar{
         padding: 50px 0px 0px 0px;
     }
+
     li{
         text-align: left;
         margin: 100px 0px 100px 50px;
     }
+
     .content{
         grid-area: main;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        grid-gap: 40px;
+        gap: 40px;
         margin: 40px 20px 40px 20px;
     }
+
 }
