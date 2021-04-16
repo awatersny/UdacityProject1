@@ -1,19 +1,40 @@
     body{
         position: relative;
         margin: 0px;
-        background-image: url("../images/Fergus.jpg");
         background-size: 100%;
     }
 
+    .background{
+        position: fixed;
+        object-fit: none;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/Tower-Bridge.jpg");
+        z-index: -1;
+    }
+
+    h1,
+    h2,
+    h3{
+        font-family: cursive;
+    }
+
     h1{
-        padding: 5px 0px 10px 30px;
-        font-size: 50px;
+        margin: 1% 0% 1% 0%;
+        padding: 0px 0px 0px 30px;
+        font-size: 70px;
+        
+    }
+
+    h2{
+        font-size: 55px;
+        text-decoration: underline;
     }
 
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100px 120px 100% 60px;
+        grid-template-rows: 100px 10% 100% 5%;
         grid-template-areas: 
         "hd hd hd"
         "sd sd sd"
@@ -55,13 +76,14 @@
     }
 
     li{
+        font-size: 30px;
         text-decoration: underline;
         text-align: left;
         margin: 0px 3vw 0px 3vw;
     }
 
     .content{
-        margin: 0px 50px 50px 50px;
+        margin: 0px 0px 0px 0px;
         grid-area: main;
         display: grid;
         grid-template-columns: 100%;
@@ -70,14 +92,19 @@
     }
 
     .child-content{
-        padding: 20px 0px 0px 0px;
+        height: 100%;
+        margin: 0% 5% 0% 5%;
+        padding: 0% 0% 0% 0%;
         text-align: center;
         background-color: #dddddd;
     }
 
     .button{
+        font-size: 200%;
         border-radius: 10px;
         box-shadow: -5px 10px 15px #000000;
+        background-color: #00a2ff;
+        color: #ffffff;
     }
 
     .button:hover{
@@ -85,46 +112,48 @@
     }
 
     .card-button{
-        margin-top: 20%;
+        margin-top: 5%;
         width: 200px;
         height: 50px;
+        height: 10%;
+        width: 50%;
     }
 
-    .dog-img{
-        max-height: 40%;
-        height: 40%;
-        width: 90%;
+    .card-img{
+        max-height: 60%;
+        height: 100%;
+        width: 100%;
     }
 
     .footer{
+        position: relative;
         padding: 0px 0px 0px 20px;
         color: white;
         background-color: #000055;
         grid-area: ft;
     }
 
+    .bottomnav{
+        padding: 1% 0% 1% 0%;
+    }
+
     .footer-bar{
+        font-size: 30px;
         display: inline;
         padding: 0px 0px 0px 0px;
     }
 
 @media(max-width: 999px){
-
-    .child-content{
-        padding: 10% 5% 0% 5%;
-    }
-
     li{
         display: inline;
     }
-
 }
 
 @media(min-width: 1000px){
 
     .container{
         display: grid;
-        grid-template-columns: auto repeat(3, 20%);
+        grid-template-columns: 5% repeat(3, 20%);
         grid-template-rows: 120px 100% 60px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
@@ -134,12 +163,12 @@
     }
 
     .sidebar{
-        max-height: 85%;
-        padding: 50px 0px 0px 0px;
+        max-height: 100%;
+        padding: 50px 10px 0px 0px;
     }
 
     .footer{
-        position: absolute;
+        position: fixed;
         width: 100vw;
         bottom: 0px;
     }
@@ -150,13 +179,25 @@
     }
 
     .content{
-        max-height: 80%;
+        max-height: 100%;
         grid-area: main;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 70%;
         gap: 40px;
-        margin: 40px 20px 40px 20px;
+        margin: 5% 20px 40px 20px;
+    }
+
+    .child-content{
+        padding: 0%;
+    }
+
+    .card-img{
+        max-height: 40%;
+    }
+
+    .button{
+        font-size: 150%;
     }
 
 }
