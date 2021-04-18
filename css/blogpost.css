@@ -1,0 +1,18 @@
+body{
+    position: relative;
+    margin: 0px;
+    background-size: 100%;
+}
+
+.background{
+    position: fixed;
+    object-fit: ;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("../images/Horton-Plaza.jpg"); */
+    z-index: -1;
+}
+
+.bg-image{
+    width: 100%;
+}
