@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example Blog Post</title>
         <meta charset="utf-8"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
         <meta name="description" content="Andrew Waterman Brooklyn NY"/>
         <link rel="stylesheet" href="css/blogpost.css">
+        <title>Example Blog Post</title>
     </head>
     <body>
         <div class="background">
             <img class='bg-image' src="images/Horton-Plaza.jpg" alt="An outdoor mall with a lamppost in the foreground.">
         </div>
+        <header class="header box">
+            <h1>My Travel Destinations</h1>
+        </header>
         <div class="container">
-            <header class="header">
-                <h1>My Travel Destinations</h1>
-            </header>
-            <nav class="nav">
-                <li class="nav-left">
-                    <ul><a href="index.html">Back</a></ul>
-                </li>
-                <li class="nav-right">
-                    <ul>Option</ul>
-                </li>
+            <nav class="nav-left">
+                <ul>
+                    <li class="nav-top"><a href="index.html"><h3>Home</h3></a></li>
+                </ul>
             </nav>
-            <section class="content"></section>
+            <nav class="nav-right">
+                <ul>
+                    <li class="nav-top"><a href="index.html"><h3>Back</h3></a></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <section class="card box">
+                    <h2>New York (My Hometown)</h2>
+                    <img class="card-img" src="images/East-River.jpg" alt="">
+                    <button class="button">See More</button>
+                </section>
+                <section class="card box">
+                    <h2>United Kingdom</h2>
+                    <img class="card-img" src="images/Buckingham.jpg" alt="">
+                    <button class="button">See More</button>
+                </section>
+                <section class="card box">
+                    <h2>Arizona</h2>
+                    <img class="card-img" src="images/Fergus-Stairs.jpg" alt="">
+                    <button class="button">See More</button>
+                </section>
+                <section class="card box">
+                    <h2>San Diego</h2>
+                    <img class="card-img" src="images/San-Diego.jpg" alt="">
+                    <button class="button">See More</button>
+                </section>
+            </section>
             <footer class="footer">
-
+                <nav>
+                    <ul>
+                        <li class="nav-bottom">Option</li>
+                        <li class="nav-bottom">Option</li>
+                        <li class="nav-bottom">Option</li>
+                        <li class="nav-bottom">Option</li>
+                    </ul>
+                </nav>
             </footer>
         </div>
     </body>
