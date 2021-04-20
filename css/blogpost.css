@@ -13,8 +13,8 @@ h3{
 }
 
 h1{
-    margin: 2% 0% 2% 0%;
-    font-size: 450%;
+    margin: 5% 0% 5% 0%;
+    font-size: 600%;
     
 }
 
@@ -24,8 +24,8 @@ h2{
 }
 
 h3{
-    margin: 2% 0% 2% 0%;
-    font-size: 200%;
+    margin: 10% 0% 10% 0%;
+    font-size: 300%;
 }
 
 ul{
@@ -56,13 +56,11 @@ ul{
 }
 
 .container{
-    margin: 9% 0% 0% 0%;
-    max-height: 100%;
+    margin: 200px 0% 0% 0%;
     width: 100vw;
-    height: 100%;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
-    grid-template-rows: 10% 60% 30%;
+    grid-template-rows: 3% 90% auto;
     grid-template-areas:
     "lnav rnav"
     "main main"
@@ -109,23 +107,26 @@ ul{
     padding: 40px;
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 24%);
     grid-areas:
-    "card1 card2"
-    "card3 card4"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
     ;
-    gap: 40px;
+    gap: 50px;
 }
 
 .card{
+    text-align: center;
     background-color: #dddddd;
     border-radius: 10px;
 }
 
 .card-img{
-    height: 50%;
-    width: 100%;
+    margin: 0px 0px 40px 0px;
+    height: 40%;
+    width: 90%;
 }
 
 .button{
@@ -136,6 +137,10 @@ ul{
     color: #ffffff;
 }
 
+.button:hover{
+    box-shadow: none;
+}
+
 .footer{
     grid-area: foot;
     background-color: #000055;
@@ -144,10 +149,19 @@ ul{
 
 @media(min-width: 1000px){
 
+    h1{
+        margin: 2% 0% 2% 0%;
+        font-size: 450%;
+    }
+
+    h3{
+        margin: 2% 0% 2% 0%;
+        font-size: 200%;
+    }
+
     .container{
         margin: 135px 0% 0% 0%;
         width: 100vw;
-        height: 100vw;
         display: grid;
         grid-template-columns:  repeat(2, 1fr);
         grid-template-rows: 5% 90% auto;
@@ -156,6 +170,25 @@ ul{
         "main main"
         "foot foot"
         ;
+    }
+
+    .content{
+        padding: 40px;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 48%);
+        grid-areas:
+        "card1 card2"
+        "card3 card4"
+        ;
+        gap: 40px;
+    }
+
+    .card-img{
+        margin: 0px 0px 40px 0px;
+        height: 58%;
+        width: 100%;
     }
 
 }
