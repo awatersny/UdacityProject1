@@ -1,9 +1,15 @@
+/* Main Style Page */ 
+/* Author: Drew Waters */   
+/* Last Updated: 06/26/2021 */   
+
+/* Body */
     body{
         position: relative;
         margin: 0px;
         background-size: 100%;
     }
 
+/* Background */
     .background{
         position: fixed;
         object-fit: none;
@@ -13,6 +19,7 @@
         z-index: -1;
     }
 
+/* Page Headers */
     h1,
     h2,
     h3{
@@ -39,6 +46,7 @@
         font-size: 150%;
     }
 
+ /* Page Container */   
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -55,7 +63,7 @@
         border-radius: 10px;
         box-shadow: -5px 10px 15px #000000;
     }
-
+/* Header */
     .header{
         position: fixed;
         width: 100vw;
@@ -66,6 +74,7 @@
         grid-area: hd;
     }
 
+/* Sidebar */
     .sidebar{
         padding: 20px;
         text-align: center;
@@ -73,12 +82,14 @@
         grid-area: sd;
     }
 
+ /* Navbar */
     .navbar{
         color: #0079c0;
         padding: 0px;
         list-style: none;
     }
 
+/* Lists */
     ul{
         padding: 0px;
     }
@@ -90,6 +101,7 @@
         margin: 0px 3vw 0px 3vw;
     }
 
+/* Content Layout */
     .content{
         margin: 0px 0px 0px 0px;
         grid-area: main;
@@ -107,6 +119,7 @@
         background-color: #dddddd;
     }
 
+/* Button Styling */
     .button{
         font-size: 200%;
         border-radius: 10px;
@@ -127,12 +140,14 @@
         width: 50%;
     }
 
+/* Card Styling */
     .card-img{
         max-height: 50%;
         height: 100%;
         width: 100%;
     }
 
+/* Footer */
     .footer{
         position: relative;
         padding: 0px 0px 0px 20px;
@@ -141,6 +156,7 @@
         grid-area: ft;
     }
 
+/* Bottom Nav */
     .bottomnav{
         padding: 1% 0% 1% 0%;
     }
@@ -151,6 +167,7 @@
         padding: 0px 0px 0px 0px;
     }
 
+/* Media Queries */
 @media(max-width: 999px){
     li{
         display: inline;
@@ -159,6 +176,7 @@
 
 @media(min-width: 1000px){
 
+/* Additional Page Headers */
     h1{
         font-size: 100px;
         margin: 1% 0% 1% 0%;
@@ -173,6 +191,7 @@
         font-size: 100%;
     }
 
+/* Containter Grid Styling */    
     .container{
         display: grid;
         grid-template-columns: 5% repeat(3, 20%);
@@ -184,23 +203,27 @@
         gap: 0px;
     }
 
+/* Sidebar */
     .sidebar{
         max-height: 100%;
         padding: 50px 10px 0px 0px;
         margin: 0px 30px 0px 0px
     }
 
+/* Footer */
     .footer{
         position: fixed;
         width: 100vw;
         bottom: 0px;
     }
 
+/* Lists */
     li{
         text-align: left;
         margin: 100px 0px 100px 50px;
     }
 
+/* Content */
     .content{
         max-height: 100%;
         grid-area: main;
@@ -215,10 +238,12 @@
         padding: 0%;
     }
 
+/* Card Images */
     .card-img{
         max-height: 40%;
     }
 
+/* Button */
     .button{
         font-size: 130%;
     }
