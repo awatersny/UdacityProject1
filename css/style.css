@@ -61,7 +61,7 @@
         width: 100vw;
         padding: 0px 0px 0px 20px;
         color: #ffffff;
-        background-color: #00a2ff;
+        background-color: #0079c0;
         border-radius: 0px;
         grid-area: hd;
     }
@@ -69,12 +69,12 @@
     .sidebar{
         padding: 20px;
         text-align: center;
-        grid-area: sd;
         background-color: #ffffff;
+        grid-area: sd;
     }
 
     .navbar{
-        color: #00a2ff;
+        color: #0079c0;
         padding: 0px;
         list-style: none;
     }
@@ -111,7 +111,7 @@
         font-size: 200%;
         border-radius: 10px;
         box-shadow: -5px 10px 15px #000000;
-        background-color: #00a2ff;
+        background-color: #0079c0;
         color: #ffffff;
     }
 
